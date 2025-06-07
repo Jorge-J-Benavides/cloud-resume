@@ -28,7 +28,7 @@
                 text-align: left;
             }
             #nav li {
-                margin-bottom: 0; /* Ensures list items are tightly packed if needed */
+                margin-bottom: 0.25em; /* Small space between skills, slight increase for clarity */
                 text-align: left;
             }
             /* Removed styles for header icons as they are now removed from HTML */
@@ -63,7 +63,6 @@
     </head>
     <body class="is-preload">
 
-        <!-- Header section copied from index.html -->
         <header id="header">
             <div class="inner">
                 <a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Jorge Benavides's Profile Picture" /></a>
@@ -97,16 +96,36 @@
                 <header class="major">
                     <h2>Cloud Resume Challenge</h2>
                 </header>
-                <p>This project involved building a serverless resume website hosted on AWS, utilizing S3 for static hosting, CloudFront for CDN, Lambda for backend API, API Gateway, DynamoDB for visitor count, and Route 53 for custom domain. Automated deployments with GitHub Actions.</p>
-                <!-- Add more details, images, or links specific to this project here -->
+                <p>
+                    This very website is a testament to my cloud engineering capabilities. Built as a part of the Cloud Resume Challenge, it's a <strong>serverless platform</strong> continuously deployed and updated, showcasing practical experience with a modern <strong>cloud stack</strong>.
+                </p>
+                <h3>Core Technologies Currently in Use:</h3>
+                <ul>
+                    <li><strong>AWS:</strong>
+                        <ul>
+                            <li><strong>S3</strong> (Static Hosting)</li>
+                            <li><strong>CloudFront</strong> (CDN)</li>
+                            <li><strong>Route 53</strong> (DNS)</li>
+                        </ul>
+                    </li>
+                    <li><strong>GitHub Actions:</strong> For seamless, <strong>automated CI/CD and deployment</strong>, ensuring this site is always up-to-date.</li>
+                </ul>
+                <h3>Future Enhancements & Learning:</h3>
+                <p>
+                    I'm continuously expanding this project, with plans to integrate additional AWS services to enhance its functionality, including:
+                </p>
+                <ul>
+                    <li><strong>AWS Lambda:</strong> To power a <strong>backend API</strong> for dynamic features.</li>
+                    <li><strong>AWS API Gateway:</strong> For secure exposure and management of the API.</li>
+                    <li><strong>AWS DynamoDB:</strong> To serve as a <strong>NoSQL database</strong>, specifically for tracking visitor count and other potential data.</li>
+                </ul>
                 <ul class="actions">
-                    <li><a href="https://github.com/jorgejbenavides/cloud-resume-challenge" class="button" target="_blank">View on GitHub</a></li>
+                    <li><a href="https://github.com/Jorge-J-Benavides/cloud-resume" class="button" target="_blank">View on GitHub</a></li>
                     <li><a href="index.html#two" class="button">Back to Projects</a></li>
                 </ul>
             </section>
         </div>
 
-        <!-- Footer section copied from index.html -->
         <footer id="footer">
             <div class="inner">
                 <ul class="icons">
