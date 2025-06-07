@@ -3,19 +3,31 @@ name: Upload Website
 on:
   push:
     branches:
-    - main
+      - main # This workflow runs when changes are pushed to the 'main' branch
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # The type of runner that the job will execute on
     steps:
-    - uses: actions/checkout@master
-    - uses: jakejarvis/s3-sync-action@master
+    - name: Checkout code # Step to checkout your repository code
+      uses: actions/checkout@v3 # Use a specific version for stability (v3 is current stable for actions/checkout)
+
+    - name: Sync S3 Bucket # Step to sync your 'website' directory to S3
+      uses: jakejarvis/s3-sync-action@v1.1.0 # Use a specific version for stability (v1.1.0 is current stable for s3-sync-action)
       with:
-        args: --follow-symlinks --delete
+        args: --follow-symlinks --delete # Arguments for the s3 sync command
       env:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'us-west-2'   # optional: defaults to us-east-1
-        SOURCE_DIR: 'website'      # optional: defaults to entire repository
+        AWS_REGION: 'us-west-2'   # Your S3 bucket's region
+        SOURCE_DIR: 'website'      # The directory in your repo to upload to S3
+
+    - name: Invalidate CloudFront Cache # Step to clear CloudFront's cache
+      uses: chetan/invalidate-cloudfront-action@v2 # Action to invalidate CloudFront
+      env:
+        DISTRIBUTION: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} # CloudFront Distribution ID secret
+        PATHS: "/*" # Invalidate all paths in the cache (most common for full website updates)
+        AWS_REGION: 'us-west-2' # Your CloudFront distribution's region (often us-east-1, but specify if different)
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }} # Re-using your existing AWS credentials
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # Re-using your existing AWS credentials
