@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Jorge Benavides - Cloud Resume Challenge</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* General alignment for the header content */
+            #header .inner {
+                text-align: left; /* Align all content within the inner div to the left */
+            }
+
+            #header h1 {
+                text-align: left; /* Ensure the main heading is left-aligned */
+            }
+
+            #header .image.avatar {
+                margin: 0 0 1em 0; /* Adjust margin for left alignment */
+            }
+
+            #header .tagline {
+                text-align: left; /* Align the tagline to the left */
+            }
+            #nav ul {
+                list-style: none; /* Removes the default bullet points */
+                padding-left: 0; /* Removes default padding that might create space for bullets */
+                text-align: left;
+            }
+            #nav li {
+                margin-bottom: 0; /* Ensures list items are tightly packed if needed */
+                text-align: left;
+            }
+            /* Removed styles for header icons as they are now removed from HTML */
+
+            /* Styles for the new tech stack heading */
+            .tech-stack-heading {
+                color: #fff; /* White color for the heading */
+                font-size: 0.9em; /* Smaller font size for sub-heading */
+                text-transform: uppercase; /* Uppercase text */
+                letter-spacing: 0.1em; /* Add some letter spacing */
+                margin-top: 2em; /* Space above the heading */
+                margin-bottom: 0.5em; /* Space below the heading */
+                padding-left: 0; /* Removes default padding that might create space for bullets */
+                text-align: left;
+            }
+
+            /* Styles for the key skills section */
+            .key-skills {
+                list-style: none;
+                padding: 0;
+                margin-top: 0; /* Adjust margin as heading provides spacing */
+                font-size: 1em; /* Slightly larger font */
+                color: #fff; /* Solid white color for better visibility */
+                line-height: 1.6; /* Improve readability for stacked lines */
+                text-align: left;
+            }
+            .key-skills li {
+                margin-bottom: 0.25em; /* Small space between skills */
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header section copied from index.html -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Jorge Benavides's Profile Picture" /></a>
+                <h1><strong>Jorge Benavides</strong> <br />
+                <span class="title">Network Automation Engineer</span><br />
+                <p class="tagline"></p> </h1>
+                <h4 class="tech-stack-heading">TECH STACK</h4>
+                <ul class="key-skills compact"> <li>Python</li>
+                    <li>Golang</li>
+                    <li>Ansible</li>
+                    <li>Cisco</li>
+                    <li>Juniper</li>
+                    <li>Arista</li>
+                    <li>SD-WAN</li>
+                    <li>BGP</li>
+                    <li>MPLS</li>
+                </ul>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html#one">About Me</a></li>
+                        <li><a href="resume.html" target="_blank">Resume</a></li>
+                        <li><a href="index.html#two">Projects</a></li>
+                        <li><a href="index.html#three">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main">
+            <section id="project-details" class="alt">
+                <header class="major">
+                    <h2>Cloud Resume Challenge</h2>
+                </header>
+                <p>This project involved building a serverless resume website hosted on AWS, utilizing S3 for static hosting, CloudFront for CDN, Lambda for backend API, API Gateway, DynamoDB for visitor count, and Route 53 for custom domain. Automated deployments with GitHub Actions.</p>
+                <!-- Add more details, images, or links specific to this project here -->
+                <ul class="actions">
+                    <li><a href="https://github.com/jorgejbenavides/cloud-resume-challenge" class="button" target="_blank">View on GitHub</a></li>
+                    <li><a href="index.html#two" class="button">Back to Projects</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Footer section copied from index.html -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://github.com/Jorge-J-Benavides" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/jorgejbenavides" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:jorge.j.benavides@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2025 Jorge Benavides. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

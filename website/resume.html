@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Jorge Benavides - Resume</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style>
+            /* General alignment for the header content */
+            #header .inner {
+                text-align: left; /* Align all content within the inner div to the left */
+            }
+
+            #header h1 {
+                text-align: left; /* Ensure the main heading is left-aligned */
+            }
+
+            #header .image.avatar {
+                margin: 0 0 1em 0; /* Adjust margin for left alignment */
+            }
+
+            #header .tagline {
+                text-align: left; /* Align the tagline to the left */
+            }
+            #nav ul {
+                list-style: none; /* Removes the default bullet points */
+                padding-left: 0; /* Removes default padding that might create space for bullets */
+                text-align: left;
+            }
+            #nav li {
+                margin-bottom: 0; /* Ensures list items are tightly packed if needed */
+                text-align: left;
+            }
+            /* Removed styles for header icons as they are now removed from HTML */
+
+            /* Styles for the new tech stack heading */
+            .tech-stack-heading {
+                color: #fff; /* White color for the heading */
+                font-size: 0.9em; /* Smaller font size for sub-heading */
+                text-transform: uppercase; /* Uppercase text */
+                letter-spacing: 0.1em; /* Add some letter spacing */
+                margin-top: 2em; /* Space above the heading */
+                margin-bottom: 0.5em; /* Space below the heading */
+                padding-left: 0; /* Removes default padding that might create space for bullets */
+                text-align: left;
+            }
+
+            /* Styles for the key skills section */
+            .key-skills {
+                list-style: none;
+                padding: 0;
+                margin-top: 0; /* Adjust margin as heading provides spacing */
+                font-size: 1em; /* Slightly larger font */
+                color: #fff; /* Solid white color for better visibility */
+                line-height: 1.6; /* Improve readability for stacked lines */
+                text-align: left;
+            }
+            .key-skills li {
+                margin-bottom: 0.25em; /* Small space between skills */
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header section copied from index.html -->
+        <header id="header">
+            <div class="inner">
+                <a href="index.html" class="image avatar"><img src="images/avatar.jpg" alt="Jorge Benavides's Profile Picture" /></a>
+                <h1><strong>Jorge Benavides</strong> <br />
+                <span class="title">Network Automation Engineer</span><br />
+                <p class="tagline"></p> </h1>
+                <h4 class="tech-stack-heading">TECH STACK</h4>
+                <ul class="key-skills compact"> <li>Python</li>
+                    <li>Golang</li>
+                    <li>Ansible</li>
+                    <li>Cisco</li>
+                    <li>Juniper</li>
+                    <li>Arista</li>
+                    <li>SD-WAN</li>
+                    <li>BGP</li>
+                    <li>MPLS</li>
+                </ul>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html#one">About Me</a></li>
+                        <li><a href="#resume">Resume</a></li> <!-- Stays on this page -->
+                        <li><a href="index.html#two">Projects</a></li>
+                        <li><a href="index.html#three">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main content area to hold the resume section -->
+        <div id="main">
+            <section id="resume" class="alt"> <!-- Added 'alt' class for potential styling variation if main.css uses it -->
+                <header class="major">
+                    <h2>Resume</h2>
+                </header>
+
+                <h3>Summary</h3>
+                <p>Network Automation Engineer with 6+ years of experience automating large-scale, multi-vendor infrastructures across enterprise and cloud. Expert in Python, Ansible, and Golang to build CI/CD pipelines, reduce manual tasks, and improve compliance. Proven track record supporting Cisco, Juniper, and Arista networks in SD-WAN, BGP, and MPLS deployments. Seeking a fully remote DevNet or infrastructure automation role.</p>
+
+                <h3>Professional Experience</h3>
+                <h4>Google, Sunnyvale, CA</h4>
+                <p><strong>Network Engineer</strong> | Dec 2022 – Mar 2025</p>
+                <ul>
+                    <li>Developed Golang-based automation for protocol (BGP, MPLS, VRRP) testing and hardware validation across Juniper, Cisco, and Arista devices, increasing test coverage by 20% and enhancing next-generation hardware stability.</li>
+                    <li>Automated Juniper snapshot management using scripts and integrated Golang-driven workflows into global CI/CD pipelines, eliminating 100% of manual tasks and reducing network outage risks.</li>
+                    <li>Collaborated with cross-functional teams to troubleshoot complex network issues using packet captures, logs, and routing table analysis, ensuring rapid resolution with key vendors (Cisco, Arista, Juniper).</li>
+                </ul>
+
+                <h4>USAA, San Antonio, TX</h4>
+                <p><strong>Senior Network Engineer</strong> | Jan 2022 – Dec 2022</p>
+                <ul>
+                    <li>Automated provisioning, compliance, configs as Infrastructure as Code for 25,000+ network devices using Python and Ansible, integrating GitLab pipelines to reduce audit preparation time by 40% and save $2M in operational costs.</li>
+                    <li>Developed Python scripts to migrate 20,000 SD-WAN VPN tunnels from on-prem data centers to Equinix facilities with near-zero downtime, configuring BGP, VRFs, and prefix lists on Cisco and VeloCloud SD-WAN platforms.</li>
+                    <li>Resolved critical network issues by analyzing PCAPs and logs, partnering with vendors to accelerate root cause analysis and reduce incident MTTR by 30%.</li>
+                </ul>
+
+                <h4>USAA, San Antonio, TX</h4>
+                <p><strong>Network Engineer</strong> | Apr 2019 – Jan 2022</p>
+                <ul>
+                    <li>Led SD-WAN expansion for 10,000+ edge devices across two datacenters to support remote work, using Python scripts to interact with SD-WAN Orchestrator REST APIs and create Kibana dashboards for network health monitoring.</li>
+                    <li>Automated network device deployments using Python and API-driven orchestration platforms, reducing setup time by 30% for 1,000+ devices, and configured secure access policies via network authentication systems.</li>
+                    <li>Developed Python-based monitoring dashboards, improving latency detection by 25% and supporting 20,000+ remote employees.</li>
+                </ul>
+
+                <h4>LinTech Global, Corpus Christi, TX</h4>
+                <p><strong>Network Support Tier II</strong> | Aug 2018 – Mar 2019</p>
+                <ul>
+                    <li>Automated switch configuration backups using Python SSH scripts, enhancing compliance and reliability.</li>
+                    <li>Managed end-to-end installation, configuration, and documentation of network routers and switches, consistently resolving trouble tickets with high customer satisfaction.</li>
+                    <li>Contributed to network design reviews and change approval processes, ensuring robust network operations.</li>
+                </ul>
+
+                <h4>United States Marine Corps</h4>
+                <p><strong>Network Administrator</strong> | Nov 2009 – Mar 2014</p>
+                <ul>
+                    <li>Led IT team in deploying and securing network infrastructure for 8 remote offices, including Cisco devices, satellite communications, and Windows servers.</li>
+                    <li>Planned, installed, and maintained network equipment, ensuring reliable connectivity and security for mission-critical operations.</li>
+                </ul>
+
+                <h3>Skills</h3>
+                <ul>
+                    <li><strong>Automation & Scripting:</strong> Python, Golang, Ansible, Netmiko, REST APIs, JSON/YAML</li>
+                    <li><strong>Networking:</strong> Cisco, Juniper, Arista, SD-WAN (VeloCloud), BGP, MPLS, VRRP, TCP/IP</li>
+                    <li><strong>Infrastructure & Tools:</strong> Git, CI/CD, Linux, Wireshark, Agile, IaC</li>
+                </ul>
+
+                <h3>Education</h3>
+                <p><strong>University of Colorado Boulder, Boulder, CO</strong><br />
+                B.A., Computer Science</p>
+
+                <h3>Certifications</h3>
+                <ul>
+                    <li>JNCIA-Junos, Juniper Networks – 2023</li>
+                    <li>AWS Certified Cloud Practitioner, Amazon Web Services – 2025</li>
+                </ul>
+                <ul class="actions">
+                    <li><a href="index.html" class="button">Back to Main Site</a></li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Including footer and scripts from main.html for consistency,
+             though you might simplify if the resume page doesn't need them. -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://github.com/Jorge-J-Benavides" class="icon brands fa-github" target="_blank"><span class="label">Github</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/jorgejbenavides" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:jorge.j.benavides@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2025 Jorge Benavides. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
